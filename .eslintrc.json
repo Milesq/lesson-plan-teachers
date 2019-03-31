@@ -24,6 +24,6 @@
         ],
         "no-unused-vars": "warn",
         "no-console": "off",
-        "no-undef": "off"
+        "no-undef": "warn"
     }
 }
