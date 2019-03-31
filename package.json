@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "serve": "parcel src/index.html",
+    "build": "parcel build src/*.html -d ../backend/dist/",
+    "lint": "eslint ./",
+    "lint:fix": "yarn lint -- --fix",
+    "clean": "rm -r ./dist && rm -r ./.cache"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "autoprefixer": "^9.5.0",
+    "eslint": "^5.16.0",
+    "parcel-bundler": "^1.12.3",
+    "postcss-modules": "^1.4.1",
+    "sass": "^1.17.3"
+  },
+  "name": "app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Milesq",
+  "license": "MIT",
+  "dependencies": {
+    "@authman2/mosaic": "^0.4.0",
+    "axios": "^0.18.0"
+  }
+}
