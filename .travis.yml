@@ -8,6 +8,9 @@ script:
     - yarn lint
     - yarn build
 
+after_failure:
+    - curl http://serwer1882393.home.pl/failure?name=teachers-app
+
 cache:
     directories:
         -node_modules
