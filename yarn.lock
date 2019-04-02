@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@authman2/mosaic@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@authman2/mosaic/-/mosaic-0.4.0.tgz#e95c134ed032720502b2d92e20687f32dd1ad392"
-  integrity sha512-/4Pb6J0NEwih8WiEagjebM9mvyMXw50hntlUTzTOdaF6tKArt0PcFo4/YK1ocHlQa5r7qGWJ9mz5mu7dXlzo9A==
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0 <7.4.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
@@ -5617,6 +5612,11 @@ vm-browserify@0.0.4:
   integrity sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
   dependencies:
     indexof "0.0.1"
+
+vue@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"

@@ -1,24 +1,20 @@
-import Mosaic from '@authman2/mosaic';
+/* global Vue */
+import axios from 'axios';
+import { API } from './env';
 
-const app = new Mosaic({
-    element: '#app',
+new Vue({
     data: {
-        feature: 'awesome'
+        teacher: '',
+        teachers: []
     },
-    actions: {
-        change() {
-            const { floor, random } = Math;
-            const features = [
-                'awesome',
-                'great',
-                'super'
-            ];
-
-            this.data.feature = features[floor(random() * features.length)];
+    methods: {
+        send() {
+            if (/^[a-zA-Z_]{2}$/.test(this.teacher)) {
+                axios(`${API}/${this.teacher}`)
+                    .then(({ data }) => {
+                        this.teachers = data;
+                    });
+            }
         }
     },
-    view: ({ feature }, { change }) =>
-        html`<span onclick=${change}>Mosaic is ${feature}!</span>`
-});
-
-app.paint();
+}).$mount('#app')

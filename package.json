@@ -1,7 +1,7 @@
 {
   "scripts": {
     "serve": "parcel src/index.html",
-    "build": "parcel build src/*.html -d ../backend/dist/",
+    "build": "parcel build src/*.html",
     "lint": "eslint ./",
     "lint:fix": "yarn lint -- --fix",
     "clean": "rm -r ./dist && rm -r ./.cache"
@@ -21,7 +21,6 @@
   "author": "Milesq",
   "license": "MIT",
   "dependencies": {
-    "@authman2/mosaic": "^0.4.0",
     "axios": "^0.18.0"
   }
 }
