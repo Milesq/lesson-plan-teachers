@@ -1,6 +1,9 @@
 /* global Vue */
 import axios from 'axios';
 import { API } from './env';
+import Filters from './Filters';
+
+Vue.use(Filters);
 
 new Vue({
     data: {
@@ -17,4 +20,8 @@ new Vue({
             }
         }
     },
+    mounted() {
+        this.teacher = 'Za';
+        this.send();
+    }
 }).$mount('#app')

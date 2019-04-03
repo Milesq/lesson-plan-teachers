@@ -1,0 +1,33 @@
+*[data-toolpit]
+  border-bottom: dashed 1px #123
+
+  position: relative
+  &:hover
+    &::before
+      content: attr(data-toolpit)
+
+      font-family: sans-serif
+
+      min-width: 1vmax
+      padding: 10px
+
+      background-color: #345
+      color: #fff
+
+      position: absolute
+      bottom: 20px
+      left: -10px
+
+      border-radius: 4px
+
+    &::after
+      content: ""
+
+      height: 5px
+      width: 5px
+      border: 10px solid transparent
+      border-top: 10px solid #345
+
+      position: absolute
+      bottom: 0
+      left: 0

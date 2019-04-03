@@ -13,6 +13,21 @@
             type="text"
             v-model="teacher"
             placeholder="Nauczyciel">
+
+            <main>
+                <table>
+                    <div
+                        v-for="(hour, i) in teachers"
+                        :key="i">
+                        <span
+                            v-for="(day, j) in hour"
+                            :key="j"
+                            data-toolpit="ok">
+                            | {{ day.day | weekDay }} {{ i | hoursRange }} |
+                        </span>
+                    </div>
+                </table>
+            </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./main.js"></script>
