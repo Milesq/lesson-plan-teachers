@@ -1,4 +1,8 @@
 body {
-  background-color: #345;
-  color: white;
+  background-color: #eee;
+}
+
+.lessons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }

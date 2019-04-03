@@ -21,7 +21,7 @@ new Vue({
         }
     },
     mounted() {
-        this.teacher = 'Za';
+        this.teacher = 'TJ';
         this.send();
     }
 }).$mount('#app')
