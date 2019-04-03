@@ -15,18 +15,25 @@
             placeholder="Nauczyciel">
 
             <main>
+                <div class="lessons">
+                    <span>Poniedziałek</span>
+                    <span>Wtorek</span>
+                    <span>Środa</span>
+                    <span>Czwartek</span>
+                    <span>Piątek</span>
+                </div>
                 <div
                     v-for="(hour, i) in teachers"
                     :key="i"
                     class="lessons">
                     <span
-                        class="lesson"
                         v-for="(lesson, j) in hour"
                         :key="j"
-                        :data-day="lesson.day">
-                        <!-- {{ lesson.day | weekDay }} -->
-                        {{ i }}
-                        <!-- {{ lesson.room }} -->
+                        :data-day="lesson.day"
+                        :style="{
+                            gridColumnStart: lesson.day
+                        }">
+                        {{ lesson.subject }} w sali {{ lesson.room }}
                     </span>
                 </div>
             </main>
