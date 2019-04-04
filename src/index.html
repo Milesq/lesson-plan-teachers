@@ -30,9 +30,15 @@
                         v-for="(lesson, j) in hour"
                         :key="j"
                         :data-day="lesson.day"
+                        class="lesson"
                         :style="{
                             gridColumnStart: lesson.day
-                        }">
+                        }"
+                        :data-toolpit="
+                            `${lesson.teacher}
+                            prowadzi ${lesson.subject}
+                            w sali ${lesson.room}`
+                            ">
                         {{ lesson.subject }} w sali {{ lesson.room }}
                     </span>
                 </div>
